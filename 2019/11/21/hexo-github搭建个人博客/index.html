@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="HJ-Hao的博客">
+    <meta name="keyword"  content="">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>
+        
+        hexo+github搭建个人博客 - HJ-Hao的博客 | HJ-Hao&#39;s Blog
+        
+    </title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/aircloud.css">
+    <link rel="stylesheet" href="/css/gitment.css">
+    <!--<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">-->
+    <link href="//at.alicdn.com/t/font_620856_pl6z7sid89qkt9.css" rel="stylesheet" type="text/css">
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+<body>
+
+<div class="site-nav-toggle" id="site-nav-toggle">
+    <button>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+    </button>
+</div>
+
+<div class="index-about">
+    <i> Code Make Life Funny </i>
+</div>
+
+<div class="index-container">
+    
+    <div class="index-left">
+        
+<div class="nav" id="nav">
+    <div class="avatar-name">
+        <div class="avatar radius">
+            <img src="/img/avatar.jpg" />
+        </div>
+        <div class="name">
+            <i>HJ-Hao</i>
+        </div>
+    </div>
+    <div class="contents" id="nav-content">
+        <ul>
+            <li >
+                <a href="/">
+                    <i class="iconfont icon-shouye1"></i>
+                    <span>HOME</span>
+                </a>
+            </li>
+            <li >
+                <a href="/tags">
+                    <i class="iconfont icon-biaoqian1"></i>
+                    <span>TAGS</span>
+                </a>
+            </li>
+            <li >
+                <a href="/archives">
+                    <i class="iconfont icon-guidang2"></i>
+                    <span>ARCHIVES</span>
+                </a>
+            </li>
+            <li >
+                <a href="/about/">
+                    <i class="iconfont icon-guanyu2"></i>
+                    <span>ABOUT</span>
+                </a>
+            </li>
+            
+            <li>
+                <a id="search">
+                    <i class="iconfont icon-sousuo1"></i>
+                    <span>SEARCH</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    
+        <div id="toc" class="toc-article">
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-前言"><span class="toc-text">1. 前言</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-一些准备工作"><span class="toc-text">1.1. 一些准备工作</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-搭建github博客"><span class="toc-text">2. 搭建github博客</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-先在账户上创建一个仓库"><span class="toc-text">2.1. 先在账户上创建一个仓库</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-绑定域名"><span class="toc-text">2.2. 绑定域名</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-配置SSH-key"><span class="toc-text">3. 配置SSH key</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-测试是否成功"><span class="toc-text">3.1. 测试是否成功</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-使用hexo写博客"><span class="toc-text">4. 使用hexo写博客</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-关于hexo"><span class="toc-text">4.1. 关于hexo</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2-hexo的原理"><span class="toc-text">4.2. hexo的原理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-3-一些安装时的注意事项"><span class="toc-text">4.3. 一些安装时的注意事项</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-4-安装"><span class="toc-text">4.4. 安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-5-初始化"><span class="toc-text">4.5. 初始化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-6-修改主题"><span class="toc-text">4.6. 修改主题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-7-上传之前"><span class="toc-text">4.7. 上传之前</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-8-上传到github"><span class="toc-text">4.8. 上传到github</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-9-常用hexo命令"><span class="toc-text">4.9. 常用hexo命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-11-config-yml"><span class="toc-text">4.11. _config.yml</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-12-写博客"><span class="toc-text">4.12. 写博客</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-一些参考"><span class="toc-text">5. 一些参考</span></a></li></ol>
+</div>
+    
+</div>
+
+
+<div class="search-field" id="search-field">
+    <div class="search-container">
+        <div class="search-input">
+            <span id="esc-search"> <i class="icon-fanhui iconfont"></i></span>
+            <input id="search-input"/>
+            <span id="begin-search">search</span>
+        </div>
+        <div class="search-result-container" id="search-result-container">
+
+        </div>
+    </div>
+</div>
+
+        <div class="index-about-mobile">
+            <i> Code Make Life Funny </i>
+        </div>
+    </div>
+    
+    <div class="index-middle">
+        <!-- Main Content -->
+        
+
+
+<div class="post-container">
+    <div class="post-title">
+        hexo+github搭建个人博客
+    </div>
+
+    <div class="post-meta">
+        <span class="attr">Post：<span>2019-11-21 13:28:31</span></span>
+        
+        <span class="attr">Tags：/
+        
+        <a class="tag" href="/tags/#hexo github" title="hexo github">hexo github</a>
+        <span>/</span>
+        
+        
+        </span>
+        <span class="attr">Visit：<span id="busuanzi_value_page_pv"></span>
+</span>
+</span>
+    </div>
+    <div class="post-content ">
+        <h2 id="1-前言"><a href="#1-前言" class="headerlink" title="1. 前言"></a>1. 前言</h2><p>使用github pages服务搭建博客的好处有：</p>
+<ol>
+    <li>全是静态文件，访问速度快；</li>
+    <li>免费方便，不用花一分钱就可以搭建一个自由的个人博客，不需要服务器不需要后台；</li>
+    <li>可以随意绑定自己的域名，不仔细看的话根本看不出来你的网站是基于github的；</li>
+    <li>数据绝对安全，基于github的版本管理，想恢复到哪个历史版本都行；</li>
+    <li>博客内容可以轻松打包、转移、发布到其它平台；</li>
+    <li>等等；</li>
+</ol>
+
+<h3 id="1-1-一些准备工作"><a href="#1-1-一些准备工作" class="headerlink" title="1.1. 一些准备工作"></a>1.1. 一些准备工作</h3><ol>
+    <li>拥有一个GitHub账号， 没有可以去<a href="https://github.com/" title="" target="">github</a>的官网注册一个</li>
+    <li>安装了node和npm并有一定的了解</li>
+    <li>安装了git</li>
+</ol>
+本文的环境是:
+
+<pre><code>window
+
+git@2.24
+
+node@10.15.3
+
+hexo@4.0.0</code></pre><h2 id="2-搭建github博客"><a href="#2-搭建github博客" class="headerlink" title="2. 搭建github博客"></a>2. 搭建github博客</h2><h3 id="2-1-先在账户上创建一个仓库"><a href="#2-1-先在账户上创建一个仓库" class="headerlink" title="2.1. 先在账户上创建一个仓库"></a>2.1. 先在账户上创建一个仓库</h3><p>注册好github账号后， 在添加符号处选择 new repository 添加一个仓库。需要注意的是，在创建时仓库的名字要设为 <code>你的用户名.github.io</code>。比如说你的github用户名是hi，那么你的仓库名字就应该为hi.github.io。（必须使用自己的用户名，否则会无效）。搭建好博客后，你就可以通过 <a href="http://hi.github.io" target="_blank" rel="noopener">http://hi.github.io</a> 去访问了。<br>由此可见，每一个github账户最多只能创建一个这样可以直接使用域名访问的仓库。<br>需要注意的是:</p>
+<pre><code>1、注册的邮箱一定要验证，否则不会成功；
+
+2、仓库名字必须是：username.github.io，其中username是你的用户名；
+
+3、仓库创建成功不会立即生效，需要过一段时间，大概10-30分钟，或者更久，我的等了半个小时才生效；</code></pre><h3 id="2-2-绑定域名"><a href="#2-2-绑定域名" class="headerlink" title="2.2. 绑定域名"></a>2.2. 绑定域名</h3><p>当然，你不绑定域名肯定也是可以的，就用默认的 xxx.github.io 来访问，如果你想更个性一点，想拥有一个属于自己的域名，那也是OK的。这里作者没有绑定域名， 因此就不过多介绍了， 想绑定域名的小伙伴可以去 <a href="http://blog.haoji.me/build-blog-website-by-hexo-github.html?from=xa#bang-ding-yu-ming" target="_blank" rel="noopener">http://blog.haoji.me/build-blog-website-by-hexo-github.html?from=xa#bang-ding-yu-ming</a> 参考学习。</p>
+<h2 id="3-配置SSH-key"><a href="#3-配置SSH-key" class="headerlink" title="3. 配置SSH key"></a>3. 配置SSH key</h2><p>为什么要配置这个呢？因为你提交代码肯定要拥有你的github权限才可以，但是直接使用用户名和密码太不安全了，所以我们使用ssh key来解决本地和服务器的连接问题。<br>我们打开git bash</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> ~/.ssh</span><br></pre></td></tr></table></figure>
+<p>上面的命令是为了检查是否已经存在SSH, 如果提示: No such file or directory 说明你是第一次使用git。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">"邮件地址"</span></span><br></pre></td></tr></table></figure>
+<p>然后连续3次回车，最终会生成一个文件在用户目录下，打开用户目录，找到.ssh\id_rsa.pub文件，记事本打开并复制里面的内容，打开你的github主页，进入个人设置 -&gt; SSH and GPG keys -&gt; New SSH key：</p>
+<img src="../../../../img/blog1-1.png">
+
+<p>将刚复制的内容粘贴到key那里，title随便填，保存。</p>
+<h3 id="3-1-测试是否成功"><a href="#3-1-测试是否成功" class="headerlink" title="3.1. 测试是否成功"></a>3.1. 测试是否成功</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh -T git@github.com # 注意邮箱地址不用改</span><br></pre></td></tr></table></figure>
+<p>如果提示<span style="color: #f00">Are you sure you want to continue connecting (yes/no)?</span>，输入yes，然后会看到：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Hi HJ-Hao! You’ve successfully authenticated, but GitHub does not provide shell access.</span><br></pre></td></tr></table></figure>
+<p>看到这个信息说明SSH已配置成功！</p>
+<p>这时你还需要配置你的用户信息:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name &quot;John Doe&quot; #填写你的github用户名</span><br><span class="line">$ git config --global user.email johndoe@example.com  #填写你的github注册邮箱</span><br></pre></td></tr></table></figure>
+<p>接下来我们开始搭建</p>
+<h2 id="4-使用hexo写博客"><a href="#4-使用hexo写博客" class="headerlink" title="4. 使用hexo写博客"></a>4. 使用hexo写博客</h2><h3 id="4-1-关于hexo"><a href="#4-1-关于hexo" class="headerlink" title="4.1. 关于hexo"></a>4.1. 关于hexo</h3><p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。(这段取自hexo官网)<br>官网: <a href="http://hexo.io" target="_blank">http://hexo.io</a><br>github: <a href="https://github.com/hexojs/hexo" target="_blank">https://github.com/hexojs/hexo</a></p>
+<h3 id="4-2-hexo的原理"><a href="#4-2-hexo的原理" class="headerlink" title="4.2. hexo的原理"></a>4.2. hexo的原理</h3><p>由于github pages存放的都是静态文件，博客存放的不只是文章内容，还有文章列表、分类、标签、翻页等动态内容，假如每次写完一篇文章都要手动更新博文目录和相关链接信息，相信谁都会疯掉，所以hexo所做的就是将这些md文件都放在本地，每次写完文章后调用写好的命令来批量完成相关页面的生成，然后再将有改动的页面提交到github。</p>
+<h3 id="4-3-一些安装时的注意事项"><a href="#4-3-一些安装时的注意事项" class="headerlink" title="4.3. 一些安装时的注意事项"></a>4.3. 一些安装时的注意事项</h3><pre><code>1、很多命令既可以用Windows的cmd来完成，也可以使用git bash来完成，但是部分命令会有一些问题，为避免不必要的问题，
+建议全部使用git bash来执行；
+2、hexo不同版本差别比较大，网上很多文章的配置信息都是基于2.x的，所以注意不要被误导；
+3、hexo有2种_config.yml文件，一个是根目录下的全局的_config.yml，一个是各个theme下的；</code></pre><h3 id="4-4-安装"><a href="#4-4-安装" class="headerlink" title="4.4. 安装"></a>4.4. 安装</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$npm install -g hexo</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-5-初始化"><a href="#4-5-初始化" class="headerlink" title="4.5. 初始化"></a>4.5. 初始化</h3><p>新建一个文件夹（名字可以随便取），比如我是在用户目录下创建的，由于这个文件夹将来就作为你存放代码的地方，所以最好不要随便放。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ mkdir blog    #创建一个blog文件</span><br><span class="line">$ cd blog    #打开这个blog文件</span><br><span class="line">$ hexo init</span><br></pre></td></tr></table></figure>
+<p>hexo会自动下载一些文件到这个目录，包括node_modules。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g # 生成</span><br><span class="line">$ hexo s # 启动服务</span><br></pre></td></tr></table></figure>
+<p>执行以上命令之后，hexo就会在public文件夹生成相关html文件，这些文件将来都是要提交到github去的。<br><img src="../../../../img/blog1-2.png"><br>hexo s是开启本地预览服务，打开浏览器访问 <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> 即可看到内容。如果该端口被占用了可以通过下面命令改变端口:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo s -p &lt;这里写端口&gt;</span><br></pre></td></tr></table></figure>
+<p>第一次初始化的时候hexo已经帮我们写了一篇名为 Hello World 的文章。</p>
+<h3 id="4-6-修改主题"><a href="#4-6-修改主题" class="headerlink" title="4.6. 修改主题"></a>4.6. 修改主题</h3><p>如果你觉得默认的主题不好看， 那我们先来修改主题。 这是 <a href="https://hexo.io/themes/" target="_blank">官方主题</a>。我这个博客的主题是: <a href="https://github.com/aircloud/hexo-theme-aircloud" target="_blank">AirCloud</a><br>大家也可以选择自己喜欢的主题。 选择好后，我们将它们下载下来</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git clone git@github.com:aircloud/hexo-theme-aircloud.git</span><br></pre></td></tr></table></figure>
+<p>下载好后将这个文件放入你创建的博客文件夹下的theme文件中</p>
+<img src="../../../../img/blog1-3.png">
+
+<p>修改_config.yml中的theme: landscape改为theme: aircloud（注意这里主题的名字要和主题文件的文件名一致），然后重新执行hexo g来重新生成。</p>
+<p>如果出现一些莫名其妙的问题，可以先执行hexo clean来清理一下public的内容，然后再来重新生成和发布。</p>
+<h3 id="4-7-上传之前"><a href="#4-7-上传之前" class="headerlink" title="4.7. 上传之前"></a>4.7. 上传之前</h3><p>在上传代码到github之前，一定要记得先把你以前所有代码下载下来（虽然github有版本管理，但备份一下总是好的），因为从hexo提交代码时会把你以前的所有代码都删掉。</p>
+<h3 id="4-8-上传到github"><a href="#4-8-上传到github" class="headerlink" title="4.8. 上传到github"></a>4.8. 上传到github</h3><p>如果你一切都配置好了，发布上传很容易，一句hexo d就搞定，当然关键还是你要把所有东西配置好。</p>
+<p>首先，ssh key肯定要配置好。</p>
+<p>其次，配置_config.yml中有关deploy的部分：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: git@github.com:HJ-Hao/HJ-Hao.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+
+<p>此时直接执行hexo d的话一般会报如下错误：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Deployer not found: github 或者 Deployer not found: git</span><br></pre></td></tr></table></figure>
+<p>这时我们需要安装一个插件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<p>其它命令不确定，部署这个命令一定要用git bash，否则会提示<span style="color: #f00">Permission denied (publickey)</span>。</p>
+<p>打开你的git bash，输入hexo d就会将本次有改动的代码全部提交，没有改动的不会。</p>
+<h3 id="4-9-常用hexo命令"><a href="#4-9-常用hexo命令" class="headerlink" title="4.9. 常用hexo命令"></a>4.9. 常用hexo命令</h3><p>一些常用的命令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">hexo new &quot;postName&quot;  #新建一篇文章</span><br><span class="line">hexo new page &quot;pageName&quot; #新建页面</span><br><span class="line">hexo generate #生成静态页面至public目录</span><br><span class="line">hexo server #开启预览访问端口（默认端口4000，&apos;ctrl + c&apos;关闭server）</span><br><span class="line">hexo deploy #部署到GitHub</span><br><span class="line">hexo help  # 查看帮助</span><br><span class="line">hexo version  #查看Hexo的版本</span><br></pre></td></tr></table></figure>
+<p>下面是一些命令的简写</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo s == hexo server</span><br><span class="line">hexo d == hexo deploy</span><br><span class="line">hexo g == hexo generate</span><br><span class="line">hexo n == hexo new</span><br></pre></td></tr></table></figure>
+
+<p>当然命令也可以增加一些参数, 比如:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo s -g #生成并本地预览</span><br><span class="line">hexo d -g #生成并上传</span><br></pre></td></tr></table></figure>
+<p>更多的命令请浏览<a href="https://hexo.io/zh-cn/docs/commands" target="_blank">官方文档</a></p>
+<h3 id="4-11-config-yml"><a href="#4-11-config-yml" class="headerlink" title="4.11. _config.yml"></a>4.11. _config.yml</h3><p>这里面都是一些全局配置，每个参数的意思都比较简单明了，所以就不作详细介绍了。</p>
+<p>需要特别注意的地方是，冒号后面必须有一个空格，否则可能会出问题。</p>
+<h3 id="4-12-写博客"><a href="#4-12-写博客" class="headerlink" title="4.12. 写博客"></a>4.12. 写博客</h3><p>定位到我们的hexo根目录，执行命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new &quot;my-first-blog&quot;</span><br></pre></td></tr></table></figure>
+<img src="../../../../img/blog1-4.png">
+
+<p>hexo会帮我们在_posts下生成相关md文件， 我们打开后就可以直接编写了。当然我们也可以选择直接创建，不过使用命令可以帮我们默认生成一些信息</p>
+<img src="../../../../img/blog1-5.png">
+
+<p>这个用—分隔的区域官方称为Front-matter， 它用于指定个别文件的变量。一些常见的参数有：</p>
+<pre><code>1、title 文章的标题
+2、date    建立日期
+3、update 文章更新的时间
+4、tags    文章的标签（不适用于分页）
+5、categories    文章的分类（不适用于分页）</code></pre><p>然后我们就可以直接在这个md文件下编写我们的博客了。</p>
+<h2 id="5-一些参考"><a href="#5-一些参考" class="headerlink" title="5. 一些参考"></a>5. 一些参考</h2><p><a href="http://blog.haoji.me/build-blog-website-by-hexo-github.html?from=xa#can-kao" target="_blank" rel="noopener">http://blog.haoji.me/build-blog-website-by-hexo-github.html?from=xa#can-kao</a></p>
+<p><a href="http://www.cnblogs.com/zhcncn/p/4097881.html" target="_blank" rel="noopener">http://www.cnblogs.com/zhcncn/p/4097881.html</a></p>
+<p><a href="http://www.jianshu.com/p/05289a4bc8b2" target="_blank" rel="noopener">http://www.jianshu.com/p/05289a4bc8b2</a></p>
+
+        
+        <br />
+        <div id="comment-container">
+        </div>
+        <div id="disqus_thread"></div>
+
+        <div id="lv-container">
+        </div>
+
+    </div>
+</div>
+
+    </div>
+</div>
+
+
+<footer class="footer">
+    <ul class="list-inline text-center">
+        
+        
+
+        
+
+        
+
+        
+
+        
+
+    </ul>
+    
+    <p>
+        <span id="busuanzi_container_site_pv">
+            <span id="busuanzi_value_site_pv"></span>PV
+        </span>
+        <span id="busuanzi_container_site_uv">
+            <span id="busuanzi_value_site_uv"></span>UV
+        </span>
+        Created By <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>  Theme <a href="https://github.com/aircloud/hexo-theme-aircloud" target="_blank" rel="noopener">AirCloud</a></p>
+</footer>
+
+
+
+
+</body>
+
+<script>
+    // We expose some of the variables needed by the front end
+    window.hexo_search_path = "search.json"
+    window.hexo_root = "/"
+    window.isPost = true
+</script>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="/js/index.js"></script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+    <script>
+        /**
+         *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+         *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+        */
+        if( '' || '')
+        var disqus_config = function () {
+            this.page.url = '';  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = ''; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://airclouds-blog.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+
+
+
+</html>
